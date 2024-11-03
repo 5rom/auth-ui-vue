@@ -28,6 +28,9 @@
         :showLinks="showLinks"
         :i18n="i18n"
         :additionalData="additionalData"
+        :options="options"
+        @auth:submit="emit('auth:submit', $event)"
+        @auth:error="emit('auth:error', $event)"
       />
       <MagicLink
         v-if="authView === 'magic_link'"
@@ -47,6 +50,7 @@
       :redirectTo="redirectTo"
       :showLinks="showLinks"
       :i18n="i18n"
+      :options="options"
     />
     <UpdatePassword
       v-if="authView === 'update_password'"
@@ -96,10 +100,11 @@ const props = withDefaults(defineProps<AuthProps>(), {
   dark: false,
   theme: 'default',
   otpType: 'email',
-  anonymouslyCredentials: undefined
+  anonymouslyCredentials: undefined,
+  options: undefined
 })
 
-const emit = defineEmits(['update:view'])
+const emit = defineEmits(['update:view', 'auth:submit', 'auth:error'])
 
 const authView = ref<AuthViewType>(props.view)
 const setAuthView = (newView: AuthViewType) => {

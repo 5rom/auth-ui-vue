@@ -72,6 +72,7 @@ export interface ForgottenPasswordProps {
   redirectTo?: RedirectTo
   showLinks?: boolean
   i18n?: AuthI18nVariables
+  options?: { [key: string]: any }
 }
 
 const props = withDefaults(defineProps<ForgottenPasswordProps>(), {})
@@ -94,7 +95,8 @@ const handleSubmit = async (e: Event) => {
   isLoading.value = true
   const { error: signInError } =
     await props.supabaseClient.auth.resetPasswordForEmail(email.value, {
-      redirectTo: props.redirectTo
+      redirectTo: props.redirectTo,
+      captchaToken: props.options?.captchaToken
     })
   if (signInError) {
     error.value = signInError.message

@@ -124,6 +124,7 @@ export interface EmailAuthProps {
   showLinks?: boolean
   i18n?: AuthI18nVariables
   additionalData?: { [key: string]: any }
+  options?: { [key: string]: any }
 }
 
 const props = withDefaults(defineProps<EmailAuthProps>(), {})
@@ -139,11 +140,23 @@ const { authView, setAuthView } = injectStrict<AuthViewInjection>(AuthViewKey)
 const labels = computed(
   () => props.i18n?.[authView.value] as AuthI18nVariables['sign_in' | 'sign_up']
 )
+
+const emit = defineEmits<{
+  'auth:submit': [data: any]
+  'auth:error': [error: Error]
+}>()
+
 const handleSubmit = async (e: Event) => {
-  // console.log(props)
   error.value = ''
   message.value = ''
   isLoading.value = true
+
+  emit('auth:submit', {
+    email: email.value,
+    password: password.value,
+    view: authView.value
+  })
+
   switch (authView.value) {
     case 'sign_in':
       const {
@@ -151,10 +164,12 @@ const handleSubmit = async (e: Event) => {
         error: signInError
       } = await props.supabaseClient.auth.signInWithPassword({
         email: email.value,
-        password: password.value
+        password: password.value,
+        options: props.options
       })
       if (signInError) {
         error.value = signInError.message
+        emit('auth:error', signInError)
       }
       isLoading.value = false
       break
@@ -171,9 +186,12 @@ const handleSubmit = async (e: Event) => {
       } = await props.supabaseClient.auth.signUp({
         email: email.value,
         password: password.value,
-        options
+        options: props.options
       })
-      if (signUpError) error.value = signUpError.message
+      if (signUpError) {
+        error.value = signUpError.message
+        emit('auth:error', signUpError)
+      }
       // Check if session is null -> email confirmation setting is turned on
       else if (signUpUser && !signUpSession) {
         message.value = props.i18n?.sign_up?.confirmation_text as string

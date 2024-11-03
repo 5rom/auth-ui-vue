@@ -73,6 +73,9 @@ export interface AuthProps extends BaseAuth {
     variables?: AuthI18nVariables
   }
   anonymouslyCredentials?: SignInAnonymouslyCredentials
+  options?: {
+    [key: string]: any
+  }
 }
 
 export type AuthProvider =
