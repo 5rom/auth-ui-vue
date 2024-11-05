@@ -180,13 +180,17 @@ const handleSubmit = async (e: Event) => {
       if (props.additionalData) {
         options.data = props.additionalData
       }
+
       const {
         data: { user: signUpUser, session: signUpSession },
         error: signUpError
       } = await props.supabaseClient.auth.signUp({
         email: email.value,
         password: password.value,
-        options: props.options
+        options: {
+          ...(props.options ?? {}),
+          ...options
+        }
       })
       if (signUpError) {
         error.value = signUpError.message
