@@ -1,3 +1,12 @@
+## [0.5.0](https://github.com/supa-kit/auth-ui-vue/compare/v0.4.0...v0.5.0) (2026-06-07)
+
+
+### Features
+
+* add `useOAuthPopup` and `popupWindowFeatures` props to open OAuth providers (e.g. Google) in a popup window instead of redirecting the whole tab
+
+
+
 ## [0.3.8](https://github.com/supa-kit/auth-ui-vue/compare/v0.3.7...v0.3.8) (2024-10-23)
 
 

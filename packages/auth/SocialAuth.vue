@@ -63,6 +63,8 @@ export interface SocialAuthProps {
   providerScopes?: Partial<ProviderScopes>
   queryParams?: { [key: string]: string }
   redirectTo?: RedirectTo
+  useOAuthPopup?: boolean
+  popupWindowFeatures?: string
   onlyThirdPartyProviders?: boolean
   view?: 'sign_in' | 'sign_up' | 'magic_link'
   i18n?: AuthI18nVariables
@@ -114,6 +116,41 @@ const handleProviderSignIn = async (provider: Provider) => {
       options
     })
     signInError = err
+  } else if (props.useOAuthPopup) {
+    const { data, error: err } =
+      await props.supabaseClient.auth.signInWithOAuth({
+        provider,
+        options: { ...options, skipBrowserRedirect: true }
+      })
+    signInError = err
+
+    if (!err && data?.url) {
+      const popup = window.open(
+        data.url,
+        'supabase-oauth',
+        props.popupWindowFeatures ?? 'width=500,height=650'
+      )
+
+      const { data: sub } = props.supabaseClient.auth.onAuthStateChange(
+        (event) => {
+          if (event === 'SIGNED_IN') {
+            popup?.close()
+            sub.subscription.unsubscribe()
+            clearInterval(timer)
+            isLoading.value = false
+          }
+        }
+      )
+
+      const timer = setInterval(() => {
+        if (popup?.closed) {
+          clearInterval(timer)
+          sub.subscription.unsubscribe()
+          isLoading.value = false
+        }
+      }, 500)
+      return
+    }
   } else {
     const { data, error: err } =
       await props.supabaseClient.auth.signInWithOAuth({
@@ -123,7 +160,6 @@ const handleProviderSignIn = async (provider: Provider) => {
     signInError = err
   }
 
-  // console.log(data)
   if (signInError) error.value = signInError.message
   isLoading.value = false
 }

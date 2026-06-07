@@ -15,6 +15,8 @@
       :queryParams="queryParams"
       :socialLayout="socialLayout"
       :redirectTo="redirectTo"
+      :useOAuthPopup="useOAuthPopup"
+      :popupWindowFeatures="popupWindowFeatures"
       :onlyThirdPartyProviders="onlyThirdPartyProviders"
       :i18n="i18n"
     />
