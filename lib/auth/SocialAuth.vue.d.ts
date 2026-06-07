@@ -12,6 +12,8 @@ export interface SocialAuthProps {
         [key: string]: string;
     };
     redirectTo?: RedirectTo;
+    useOAuthPopup?: boolean;
+    popupWindowFeatures?: string;
     onlyThirdPartyProviders?: boolean;
     view?: 'sign_in' | 'sign_up' | 'magic_link';
     i18n?: AuthI18nVariables;

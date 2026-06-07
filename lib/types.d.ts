@@ -31,6 +31,8 @@ interface BaseAuth {
         [key: string]: string;
     };
     redirectTo?: RedirectTo;
+    useOAuthPopup?: boolean;
+    popupWindowFeatures?: string;
     onlyThirdPartyProviders?: boolean;
     magicLink?: boolean;
     showLinks?: boolean;
