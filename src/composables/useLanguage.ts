@@ -11,7 +11,7 @@ const sign_up = {
   password_input_placeholder: '请输入密码',
   button_label: '注册',
   loading_button_label: '注册中...',
-  social_provider_text: '通过 {{provider}} 继续',
+  social_provider_text: '通过 {provider} 继续',
   link_text: '还没有账号？ 注册',
   confirmation_text: '请查看您的电子邮件以获取确认链接'
 }
@@ -22,7 +22,7 @@ const sign_in = {
   password_input_placeholder: '请输入密码',
   button_label: '登录',
   loading_button_label: '登录中...',
-  social_provider_text: '通过 {{provider}} 继续',
+  social_provider_text: '通过 {provider} 继续',
   link_text: '已经账号？登录'
 }
 const magic_link = {
