@@ -12,8 +12,6 @@ declare module '@vue/runtime-core' {
     Hero: typeof import('./src/components/Hero.vue')['default']
     IconMenu: typeof import('./src/components/IconMenu.vue')['default']
     IconPalette: typeof import('./src/components/IconPalette.vue')['default']
-    RouterLink: typeof import('vue-router')['RouterLink']
-    RouterView: typeof import('vue-router')['RouterView']
     ToggleButton: typeof import('./src/components/ToggleButton.vue')['default']
   }
 }

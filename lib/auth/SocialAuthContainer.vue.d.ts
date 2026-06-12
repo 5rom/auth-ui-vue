@@ -1,4 +1,4 @@
-import { Appearance } from '../../../../../../../../packages/types';
+import { Appearance } from '../../../../../../packages/types';
 
 interface AuthContainerProps {
     theme: 'default' | string;

@@ -79,7 +79,7 @@
 
 <script lang="ts" setup>
 import { provide, ref, watch, computed } from 'vue'
-import { I18nVariables, en, merge } from '@supabase/auth-ui-shared'
+import { I18nVariables, merge } from '@supabase/auth-ui-shared'
 import { createStitches } from '@stitches/core'
 import cloneDeep from 'lodash.clonedeep'
 
@@ -92,6 +92,7 @@ import ForgottenPassword from './ForgottenPassword.vue'
 import UpdatePassword from './UpdatePassword.vue'
 import VerifyOtp from './VerifyOtp.vue'
 import AnonymousAuth from './AnonymousAuth.vue'
+import { useAuthDefaults } from './useAuthDefaults'
 
 const props = withDefaults(defineProps<AuthProps>(), {
   view: 'sign_in',
@@ -119,10 +120,13 @@ provide(AuthViewKey, {
   setAuthView
 })
 /**
- * Localization support
+ * Localization support. Defaults come from the host app's vue-i18n instance
+ * (see useAuthDefaults). The `localization.variables` prop still overrides
+ * any default field when provided.
  */
+const authDefaults = useAuthDefaults()
 const i18n = computed<I18nVariables>(() => {
-  const defaultLanguage = cloneDeep(en)
+  const defaultLanguage = cloneDeep(authDefaults.value)
   const newlanguage = cloneDeep(props?.localization?.variables)
   return merge(defaultLanguage, newlanguage ?? {})
 })
