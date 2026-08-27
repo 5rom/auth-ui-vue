@@ -1,4 +1,6 @@
 export default {
+      password_show: "Tunjukkan kata laluan",
+      password_hide: "Sembunyikan kata laluan",
       sign_up: {
         email_label: "E-mel",
         password_label: "Kata laluan",

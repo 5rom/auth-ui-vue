@@ -1,4 +1,6 @@
 export default {
+      password_show: "Afficher le mot de passe",
+      password_hide: "Masquer le mot de passe",
       sign_up: {
         email_label: "E-mail",
         password_label: "Mot de passe",

@@ -20,6 +20,8 @@
           :placeholder="labels?.password_input_placeholder"
           :appearance="appearance"
           v-model="password"
+          :showLabel="i18n?.password_show"
+          :hideLabel="i18n?.password_hide"
         />
       </div>
 

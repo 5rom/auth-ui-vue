@@ -1,4 +1,6 @@
 declare const _default: {
+    password_show: string;
+    password_hide: string;
     sign_up: {
         email_label: string;
         password_label: string;

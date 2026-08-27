@@ -1,4 +1,6 @@
 export default {
+      password_show: "비밀번호 표시",
+      password_hide: "비밀번호 숨기기",
       sign_up: {
         email_label: "이메일",
         password_label: "비밀번호",

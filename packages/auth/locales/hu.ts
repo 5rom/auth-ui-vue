@@ -1,4 +1,6 @@
 export default {
+      password_show: "Jelszó megjelenítése",
+      password_hide: "Jelszó elrejtése",
       sign_up: {
         email_label: "E-mail",
         password_label: "Jelszó",

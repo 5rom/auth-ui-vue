@@ -1,4 +1,6 @@
 export default {
+      password_show: "Hiện mật khẩu",
+      password_hide: "Ẩn mật khẩu",
       sign_up: {
         email_label: "Email",
         password_label: "Mật khẩu",

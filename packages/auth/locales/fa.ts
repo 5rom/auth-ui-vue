@@ -1,4 +1,6 @@
 export default {
+      password_show: "نمایش رمز عبور",
+      password_hide: "پنهان کردن رمز عبور",
       sign_up: {
         email_label: "ایمیل",
         password_label: "رمز عبور",

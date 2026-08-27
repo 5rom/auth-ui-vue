@@ -1,4 +1,6 @@
 export default {
+      password_show: "Afișează parola",
+      password_hide: "Ascunde parola",
       sign_up: {
         email_label: "E-mail",
         password_label: "Parolă",

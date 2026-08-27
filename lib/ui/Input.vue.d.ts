@@ -4,12 +4,23 @@ export interface InputProps {
     type: 'text' | 'password' | 'email';
     appearance?: Appearance;
     modelValue: string;
+    showLabel?: string;
+    hideLabel?: string;
 }
-declare const _default: import('vue').DefineComponent<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<InputProps>, {}>>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
+declare const _default: import('vue').DefineComponent<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<InputProps>, {
+    showLabel: string;
+    hideLabel: string;
+}>>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     "update:modelValue": (...args: any[]) => void;
-}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<InputProps>, {}>>> & Readonly<{
+}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<InputProps>, {
+    showLabel: string;
+    hideLabel: string;
+}>>> & Readonly<{
     "onUpdate:modelValue"?: ((...args: any[]) => any) | undefined;
-}>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
+}>, {
+    showLabel: string;
+    hideLabel: string;
+}, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
 export default _default;
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
 type __VLS_TypePropsToRuntimeProps<T> = {

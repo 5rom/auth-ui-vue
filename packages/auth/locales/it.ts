@@ -1,4 +1,6 @@
 export default {
+      password_show: "Mostra password",
+      password_hide: "Nascondi password",
       sign_up: {
         email_label: "Email",
         password_label: "Password",

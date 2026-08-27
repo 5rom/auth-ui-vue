@@ -37,6 +37,10 @@ export interface AuthI18nVariables extends I18nVariables {
     button_label?: string
     loading_button_label?: string
   }
+  /** aria-label for the password field's reveal button */
+  password_show?: string
+  /** aria-label for the password field's hide button */
+  password_hide?: string
 }
 
 interface BaseAuth {

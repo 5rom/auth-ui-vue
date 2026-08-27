@@ -1,4 +1,6 @@
 export default {
+      password_show: "Şifreyi göster",
+      password_hide: "Şifreyi gizle",
       sign_up: {
         email_label: "E-posta",
         password_label: "Şifre",

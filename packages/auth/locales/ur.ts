@@ -1,4 +1,6 @@
 export default {
+      password_show: "پاس ورڈ دکھائیں",
+      password_hide: "پاس ورڈ چھپائیں",
       sign_up: {
         email_label: "ای میل",
         password_label: "پاس ورڈ",

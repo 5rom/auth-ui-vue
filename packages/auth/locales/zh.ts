@@ -1,4 +1,6 @@
 export default {
+      password_show: "显示密码",
+      password_hide: "隐藏密码",
       sign_up: {
         email_label: "邮箱",
         password_label: "密码",

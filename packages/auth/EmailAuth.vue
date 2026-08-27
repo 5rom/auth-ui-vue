@@ -37,6 +37,8 @@
               authView === 'sign_in' ? 'current-password' : 'new-password'
             "
             :appearance="appearance"
+            :showLabel="i18n?.password_show"
+            :hideLabel="i18n?.password_hide"
           />
         </div>
       </Container>

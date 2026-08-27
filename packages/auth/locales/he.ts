@@ -1,4 +1,6 @@
 export default {
+      password_show: "הצג סיסמה",
+      password_hide: "הסתר סיסמה",
       sign_up: {
         email_label: "אימייל",
         password_label: "סיסמה",

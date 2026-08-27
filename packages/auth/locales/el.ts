@@ -1,4 +1,6 @@
 export default {
+      password_show: "Εμφάνιση κωδικού πρόσβασης",
+      password_hide: "Απόκρυψη κωδικού πρόσβασης",
       sign_up: {
         email_label: "Email",
         password_label: "Κωδικός πρόσβασης",

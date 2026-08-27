@@ -1,4 +1,6 @@
 export default {
+      password_show: "Ipakita ang password",
+      password_hide: "Itago ang password",
       sign_up: {
         email_label: "Email",
         password_label: "Password",

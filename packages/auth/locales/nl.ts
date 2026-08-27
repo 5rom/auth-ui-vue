@@ -1,4 +1,6 @@
 export default {
+      password_show: "Wachtwoord tonen",
+      password_hide: "Wachtwoord verbergen",
       sign_up: {
         email_label: "E-mail",
         password_label: "Wachtwoord",
