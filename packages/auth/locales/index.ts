@@ -7,6 +7,7 @@ import el from './el'
 import en from './en'
 import es from './es'
 import fa from './fa'
+import fi from './fi'
 import fil from './fil'
 import fr from './fr'
 import he from './he'
@@ -15,14 +16,19 @@ import hu from './hu'
 import id from './id'
 import it from './it'
 import ja from './ja'
+import km from './km'
 import ko from './ko'
 import ms from './ms'
+import my from './my'
+import ne from './ne'
 import nl from './nl'
 import pl from './pl'
 import pt from './pt'
 import ro from './ro'
 import ru from './ru'
 import sv from './sv'
+import sw from './sw'
+import ta from './ta'
 import th from './th'
 import tr from './tr'
 import uk from './uk'
@@ -31,8 +37,8 @@ import vi from './vi'
 import zh from './zh'
 
 export const authMessages: Record<string, I18nVariables> = {
-  ar, bn, cs, de, el, en, es, fa, fil, fr, he, hi, hu, id, it,
-  ja, ko, ms, nl, pl, pt, ro, ru, sv, th, tr, uk, ur, vi, zh,
+  ar, bn, cs, de, el, en, es, fa, fi, fil, fr, he, hi, hu, id, it,
+  ja, km, ko, ms, my, ne, nl, pl, pt, ro, ru, sv, sw, ta, th, tr, uk, ur, vi, zh,
 } as Record<string, I18nVariables>
 
 export default authMessages
