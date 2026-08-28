@@ -67,6 +67,7 @@ import {
 } from '../types'
 import { Anchor, Button, Container, Input, Label, Message } from '../ui/index'
 import { injectStrict } from '../utils'
+import { localizeAuthError } from './localizeError'
 import { useSupabaseUser } from './UserContextProvider'
 
 export interface MagicLinkProps {
@@ -118,7 +119,7 @@ const handleSubmit = async (e: Event) => {
   }
 
   if (signInError) {
-    error.value = signInError.message
+    error.value = localizeAuthError(signInError, props.i18n?.errors)
   } else {
     message.value = props.i18n?.magic_link?.confirmation_text as string
   }

@@ -41,6 +41,8 @@ export interface AuthI18nVariables extends I18nVariables {
   password_show?: string
   /** aria-label for the password field's hide button */
   password_hide?: string
+  /** Localized messages for Supabase auth error codes, keyed by error code */
+  errors?: Record<string, string>
 }
 
 interface BaseAuth {

@@ -115,6 +115,7 @@ import {
 } from '../types'
 import { Anchor, Button, Container, Input, Label, Message } from '../ui/index'
 import { injectStrict } from '../utils'
+import { localizeAuthError } from './localizeError'
 
 export interface EmailAuthProps {
   appearance?: Appearance
@@ -170,7 +171,7 @@ const handleSubmit = async (e: Event) => {
         options: props.options
       })
       if (signInError) {
-        error.value = signInError.message
+        error.value = localizeAuthError(signInError, props.i18n?.errors)
         emit('auth:error', signInError)
       }
       isLoading.value = false
@@ -195,7 +196,7 @@ const handleSubmit = async (e: Event) => {
         }
       })
       if (signUpError) {
-        error.value = signUpError.message
+        error.value = localizeAuthError(signUpError, props.i18n?.errors)
         emit('auth:error', signUpError)
       }
       // Check if session is null -> email confirmation setting is turned on

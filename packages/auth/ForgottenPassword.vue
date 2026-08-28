@@ -65,6 +65,7 @@ import {
 } from '../types'
 import { Anchor, Button, Container, Input, Label, Message } from '../ui/index'
 import { injectStrict } from '../utils'
+import { localizeAuthError } from './localizeError'
 
 export interface ForgottenPasswordProps {
   appearance?: Appearance
@@ -99,7 +100,7 @@ const handleSubmit = async (e: Event) => {
       captchaToken: props.options?.captchaToken
     })
   if (signInError) {
-    error.value = signInError.message
+    error.value = localizeAuthError(signInError, props.i18n?.errors)
   } else {
     message.value = props.i18n?.forgotten_password?.confirmation_text as string
   }

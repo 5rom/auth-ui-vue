@@ -79,11 +79,11 @@
 
 <script lang="ts" setup>
 import { provide, ref, watch, computed } from 'vue'
-import { I18nVariables, merge } from '@supabase/auth-ui-shared'
+import { merge } from '@supabase/auth-ui-shared'
 import { createStitches } from '@stitches/core'
 import cloneDeep from 'lodash.clonedeep'
 
-import { AuthProps, AuthViewKey, AuthViewType } from '../types'
+import { AuthI18nVariables, AuthProps, AuthViewKey, AuthViewType } from '../types'
 import SocialAuthContainer from './SocialAuthContainer.vue'
 import EmailAuth from './EmailAuth.vue'
 import SocialAuth from './SocialAuth.vue'
@@ -92,7 +92,7 @@ import ForgottenPassword from './ForgottenPassword.vue'
 import UpdatePassword from './UpdatePassword.vue'
 import VerifyOtp from './VerifyOtp.vue'
 import AnonymousAuth from './AnonymousAuth.vue'
-import { useAuthDefaults } from './useAuthDefaults'
+import { useAuthDefaults, useAuthErrorDefaults } from './useAuthDefaults'
 
 const props = withDefaults(defineProps<AuthProps>(), {
   view: 'sign_in',
@@ -125,8 +125,10 @@ provide(AuthViewKey, {
  * any default field when provided.
  */
 const authDefaults = useAuthDefaults()
-const i18n = computed<I18nVariables>(() => {
-  const defaultLanguage = cloneDeep(authDefaults.value)
+const authErrorDefaults = useAuthErrorDefaults()
+const i18n = computed<AuthI18nVariables>(() => {
+  const defaultLanguage = cloneDeep(authDefaults.value) as AuthI18nVariables
+  defaultLanguage.errors = cloneDeep(authErrorDefaults.value)
   const newlanguage = cloneDeep(props?.localization?.variables)
   return merge(defaultLanguage, newlanguage ?? {})
 })

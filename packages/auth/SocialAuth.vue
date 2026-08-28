@@ -52,6 +52,7 @@ import {
 import { Divider, Button, Container } from '@/ui'
 import { Icons } from '@/icons'
 import { injectStrict } from '../utils'
+import { localizeAuthError } from './localizeError'
 import { useSupabaseUser } from './UserContextProvider'
 
 type RedirectTo = undefined | string
@@ -160,7 +161,8 @@ const handleProviderSignIn = async (provider: Provider) => {
     signInError = err
   }
 
-  if (signInError) error.value = signInError.message
+  if (signInError)
+    error.value = localizeAuthError(signInError, props.i18n?.errors)
   isLoading.value = false
 }
 

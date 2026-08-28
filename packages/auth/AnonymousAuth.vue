@@ -42,6 +42,7 @@ import {
 } from '../types'
 import { Button, Container, Message } from '../ui/index'
 import { injectStrict } from '../utils'
+import { localizeAuthError } from './localizeError'
 import { useSupabaseUser } from './UserContextProvider'
 
 export interface AnonymousSignInProps {
@@ -81,7 +82,7 @@ const handleSubmit = async (e: Event) => {
   signInError = err
 
   if (signInError) {
-    error.value = signInError.message
+    error.value = localizeAuthError(signInError, props.i18n?.errors)
   }
   isLoading.value = false
 }

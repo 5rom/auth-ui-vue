@@ -55,6 +55,7 @@ import {
 } from '../types'
 import { Button, Container, Input, Label, Message } from '../ui/index'
 import { injectStrict } from '../utils'
+import { localizeAuthError } from './localizeError'
 
 export interface UpdatePasswordProps {
   appearance?: Appearance
@@ -84,7 +85,7 @@ const handleSubmit = async (e: Event) => {
     password: password.value
   })
   if (updateError) {
-    error.value = updateError.message
+    error.value = localizeAuthError(updateError, props.i18n?.errors)
   } else {
     message.value = props.i18n?.update_password?.confirmation_text as string
   }
