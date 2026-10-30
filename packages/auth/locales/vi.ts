@@ -45,6 +45,11 @@ export default {
         button_label: "Cập nhật mật khẩu",
         loading_button_label: "Đang cập nhật mật khẩu ...",
         confirmation_text: "Mật khẩu của bạn đã được cập nhật",
+        current_password_label: "Mật khẩu hiện tại",
+        current_password_input_placeholder: "Mật khẩu hiện tại của bạn",
+        confirm_password_label: "Nhập lại mật khẩu mới",
+        confirm_password_input_placeholder: "Nhập lại mật khẩu mới của bạn",
+        password_mismatch: "Mật khẩu nhập lại không khớp",
       },
       verify_otp: {
         email_input_label: "Email",

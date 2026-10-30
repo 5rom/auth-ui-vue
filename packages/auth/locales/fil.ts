@@ -45,6 +45,11 @@ export default {
         button_label: "I-update ang password",
         loading_button_label: "Ina-update ang password ...",
         confirmation_text: "Na-update na ang iyong password",
+        current_password_label: "Kasalukuyang password",
+        current_password_input_placeholder: "Ang iyong kasalukuyang password",
+        confirm_password_label: "Kumpirmahin ang bagong password",
+        confirm_password_input_placeholder: "Ilagay muli ang iyong bagong password",
+        password_mismatch: "Hindi magkatugma ang mga password",
       },
       verify_otp: {
         email_input_label: "Email",

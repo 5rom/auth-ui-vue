@@ -45,6 +45,11 @@ export default {
         button_label: "Jelszó frissítése",
         loading_button_label: "Jelszó frissítése...",
         confirmation_text: "A jelszavad frissítésre került",
+        current_password_label: "Jelenlegi jelszó",
+        current_password_input_placeholder: "A jelenlegi jelszavad",
+        confirm_password_label: "Új jelszó megerősítése",
+        confirm_password_input_placeholder: "Add meg újra az új jelszót",
+        password_mismatch: "A jelszavak nem egyeznek",
       },
       verify_otp: {
         email_input_label: "E-mail",

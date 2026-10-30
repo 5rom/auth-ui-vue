@@ -45,6 +45,11 @@ export default {
         button_label: "Uppdatera lösenord",
         loading_button_label: "Uppdaterar lösenord ...",
         confirmation_text: "Ditt lösenord har uppdaterats",
+        current_password_label: "Nuvarande lösenord",
+        current_password_input_placeholder: "Ditt nuvarande lösenord",
+        confirm_password_label: "Bekräfta nytt lösenord",
+        confirm_password_input_placeholder: "Ange ditt nya lösenord igen",
+        password_mismatch: "Lösenorden matchar inte",
       },
       verify_otp: {
         email_input_label: "E-post",

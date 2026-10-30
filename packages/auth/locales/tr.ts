@@ -44,7 +44,12 @@ export default {
         password_input_placeholder: "Yeni şifreniz",
         button_label: "Şifreyi güncelle",
         loading_button_label: "Şifre güncelleniyor ...",
-        confirmation_text: "Şifreniz güncellendi"
+        confirmation_text: "Şifreniz güncellendi",
+        current_password_label: "Mevcut şifre",
+        current_password_input_placeholder: "Mevcut şifreniz",
+        confirm_password_label: "Yeni şifreyi onaylayın",
+        confirm_password_input_placeholder: "Yeni şifrenizi tekrar girin",
+        password_mismatch: "Şifreler eşleşmiyor"
       },
       verify_otp: {
         email_input_label: "E-posta",

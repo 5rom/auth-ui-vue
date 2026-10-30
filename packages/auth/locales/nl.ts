@@ -45,6 +45,11 @@ export default {
         button_label: "Wachtwoord bijwerken",
         loading_button_label: "Wachtwoord bijwerken ...",
         confirmation_text: "Je wachtwoord is bijgewerkt",
+        current_password_label: "Huidig wachtwoord",
+        current_password_input_placeholder: "Je huidige wachtwoord",
+        confirm_password_label: "Bevestig nieuw wachtwoord",
+        confirm_password_input_placeholder: "Voer je nieuwe wachtwoord opnieuw in",
+        password_mismatch: "Wachtwoorden komen niet overeen",
       },
       verify_otp: {
         email_input_label: "E-mail",

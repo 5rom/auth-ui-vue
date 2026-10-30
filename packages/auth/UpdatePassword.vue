@@ -8,18 +8,54 @@
     }"
   >
     <Container direction="vertical" gap="large" :appearance="appearance">
+      <div v-if="needsCurrentPassword">
+        <Label htmlFor="current_password" :appearance="appearance">
+          {{ labels?.current_password_label }}
+        </Label>
+        <Input
+          id="current_password"
+          type="password"
+          name="current_password"
+          autocomplete="current-password"
+          autofocus
+          :placeholder="labels?.current_password_input_placeholder"
+          :appearance="appearance"
+          v-model="currentPassword"
+          :showLabel="i18n?.password_show"
+          :hideLabel="i18n?.password_hide"
+        />
+      </div>
+
       <div>
-        <Label htmlFor="password_label" :appearance="appearance">
+        <Label htmlFor="password" :appearance="appearance">
           {{ labels?.password_label }}
         </Label>
         <Input
           id="password"
           type="password"
           name="password"
-          autofocus
+          autocomplete="new-password"
+          :autofocus="!needsCurrentPassword"
           :placeholder="labels?.password_input_placeholder"
           :appearance="appearance"
           v-model="password"
+          :showLabel="i18n?.password_show"
+          :hideLabel="i18n?.password_hide"
+        />
+      </div>
+
+      <div>
+        <Label htmlFor="confirm_password" :appearance="appearance">
+          {{ labels?.confirm_password_label }}
+        </Label>
+        <Input
+          id="confirm_password"
+          type="password"
+          name="confirm_password"
+          autocomplete="new-password"
+          :placeholder="labels?.confirm_password_input_placeholder"
+          :appearance="appearance"
+          v-model="confirmPassword"
           :showLabel="i18n?.password_show"
           :hideLabel="i18n?.password_hide"
         />
@@ -44,7 +80,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { SupabaseClient } from '@supabase/supabase-js'
 
 import {
@@ -65,7 +101,10 @@ export interface UpdatePasswordProps {
 
 const props = withDefaults(defineProps<UpdatePasswordProps>(), {})
 
+const currentPassword = ref('')
 const password = ref('')
+const confirmPassword = ref('')
+const needsCurrentPassword = ref(false)
 const error = ref('')
 const message = ref('')
 const isLoading = ref(false)
@@ -73,21 +112,73 @@ const isLoading = ref(false)
 const { authView } = injectStrict<AuthViewInjection>(AuthViewKey)
 
 const labels = computed(
-  () => props.i18n?.[authView.value] as AuthI18nVariables['update_password']
+  () =>
+    props.i18n?.[authView.value as 'update_password'] as AuthI18nVariables['update_password']
 )
 
-const handleSubmit = async (e: Event) => {
-  // console.log(props)
+const CURRENT_PASSWORD_REQUIRED = 'current_password_required'
+
+/**
+ * Mirror GoTrue's rule (UpdatePasswordRequireCurrentPassword): the current
+ * password is only checked when the user already has one and the session is
+ * not a password-recovery session. OAuth-only users and the "forgot password"
+ * flow therefore never see the field.
+ */
+const detectCurrentPasswordRequirement = async () => {
+  const [{ data: userData }, { data: aalData }] = await Promise.all([
+    props.supabaseClient.auth.getUser(),
+    props.supabaseClient.auth.mfa.getAuthenticatorAssuranceLevel()
+  ])
+  const hasPassword =
+    userData?.user?.identities?.some((i) => i.provider === 'email') ?? false
+  const isRecovery =
+    aalData?.currentAuthenticationMethods?.some(
+      (m) => (m.method as string) === 'recovery'
+    ) ?? false
+  needsCurrentPassword.value = hasPassword && !isRecovery
+}
+
+onMounted(() => {
+  detectCurrentPasswordRequirement().catch(() => {
+    // Leave the field hidden; the server error below reveals it if needed
+  })
+})
+
+const handleSubmit = async () => {
   error.value = ''
   message.value = ''
+
+  if (password.value !== confirmPassword.value) {
+    error.value = labels.value?.password_mismatch ?? 'Passwords do not match'
+    return
+  }
+  if (needsCurrentPassword.value && !currentPassword.value) {
+    error.value = localizeAuthError(
+      { code: CURRENT_PASSWORD_REQUIRED, message: 'Current password required' },
+      props.i18n?.errors
+    )
+    return
+  }
+
   isLoading.value = true
   const { error: updateError } = await props.supabaseClient.auth.updateUser({
-    password: password.value
+    password: password.value,
+    ...(needsCurrentPassword.value && {
+      current_password: currentPassword.value
+    })
   })
   if (updateError) {
+    // Accounts that have a password but no email identity slip past the
+    // detection above; reveal the field once the server asks for it.
+    if (updateError.code === CURRENT_PASSWORD_REQUIRED) {
+      needsCurrentPassword.value = true
+    }
     error.value = localizeAuthError(updateError, props.i18n?.errors)
   } else {
-    message.value = props.i18n?.update_password?.confirmation_text as string
+    currentPassword.value = ''
+    password.value = ''
+    confirmPassword.value = ''
+    message.value = labels.value?.confirmation_text as string
   }
   isLoading.value = false
 }

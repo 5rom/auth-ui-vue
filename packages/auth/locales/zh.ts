@@ -44,7 +44,12 @@ export default {
         password_input_placeholder: "您的新密码",
         button_label: "更新密码",
         loading_button_label: "更新密码中 ...",
-        confirmation_text: "您的密码已更新"
+        confirmation_text: "您的密码已更新",
+        current_password_label: "当前密码",
+        current_password_input_placeholder: "您的当前密码",
+        confirm_password_label: "确认新密码",
+        confirm_password_input_placeholder: "再次输入新密码",
+        password_mismatch: "两次输入的密码不一致"
       },
       verify_otp: {
         email_input_label: "邮箱",

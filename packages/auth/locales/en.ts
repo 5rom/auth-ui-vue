@@ -45,6 +45,11 @@ export default {
         button_label: "Update password",
         loading_button_label: "Updating password ...",
         confirmation_text: "Your password has been updated",
+        current_password_label: "Current password",
+        current_password_input_placeholder: "Your current password",
+        confirm_password_label: "Confirm new password",
+        confirm_password_input_placeholder: "Re-enter your new password",
+        password_mismatch: "Passwords do not match",
       },
       verify_otp: {
         email_input_label: "Email",

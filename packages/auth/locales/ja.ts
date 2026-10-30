@@ -44,7 +44,12 @@ export default {
         password_input_placeholder: "あなたの新しいパスワード",
         button_label: "パスワードを更新",
         loading_button_label: "パスワード更新中 ...",
-        confirmation_text: "パスワードが更新されました"
+        confirmation_text: "パスワードが更新されました",
+        current_password_label: "現在のパスワード",
+        current_password_input_placeholder: "現在のパスワード",
+        confirm_password_label: "新しいパスワード（確認）",
+        confirm_password_input_placeholder: "新しいパスワードをもう一度入力",
+        password_mismatch: "パスワードが一致しません"
       },
       verify_otp: {
         email_input_label: "メールアドレス",

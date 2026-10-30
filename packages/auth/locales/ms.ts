@@ -45,6 +45,11 @@ export default {
         button_label: "Kemas kini kata laluan",
         loading_button_label: "Mengemas kini kata laluan ...",
         confirmation_text: "Kata laluan anda telah dikemas kini",
+        current_password_label: "Kata laluan semasa",
+        current_password_input_placeholder: "Kata laluan semasa anda",
+        confirm_password_label: "Sahkan kata laluan baharu",
+        confirm_password_input_placeholder: "Masukkan semula kata laluan baharu anda",
+        password_mismatch: "Kata laluan tidak sepadan",
       },
       verify_otp: {
         email_input_label: "E-mel",

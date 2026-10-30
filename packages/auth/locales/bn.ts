@@ -45,6 +45,11 @@ export default {
         button_label: "পাসওয়ার্ড আপডেট করুন",
         loading_button_label: "পাসওয়ার্ড আপডেট হচ্ছে...",
         confirmation_text: "আপনার পাসওয়ার্ড আপডেট করা হয়েছে",
+        current_password_label: "বর্তমান পাসওয়ার্ড",
+        current_password_input_placeholder: "আপনার বর্তমান পাসওয়ার্ড",
+        confirm_password_label: "নতুন পাসওয়ার্ড নিশ্চিত করুন",
+        confirm_password_input_placeholder: "আপনার নতুন পাসওয়ার্ড আবার লিখুন",
+        password_mismatch: "পাসওয়ার্ড মিলছে না",
       },
       verify_otp: {
         email_input_label: "ইমেইল",

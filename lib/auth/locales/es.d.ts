@@ -45,6 +45,11 @@ declare const _default: {
         button_label: string;
         loading_button_label: string;
         confirmation_text: string;
+        current_password_label: string;
+        current_password_input_placeholder: string;
+        confirm_password_label: string;
+        confirm_password_input_placeholder: string;
+        password_mismatch: string;
     };
     verify_otp: {
         email_input_label: string;

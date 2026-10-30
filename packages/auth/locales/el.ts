@@ -45,6 +45,11 @@ export default {
         button_label: "Ενημέρωση κωδικού πρόσβασης",
         loading_button_label: "Ενημέρωση κωδικού...",
         confirmation_text: "Ο κωδικός σας έχει ενημερωθεί",
+        current_password_label: "Τρέχων κωδικός",
+        current_password_input_placeholder: "Ο τρέχων κωδικός σας",
+        confirm_password_label: "Επιβεβαίωση νέου κωδικού",
+        confirm_password_input_placeholder: "Εισαγάγετε ξανά τον νέο κωδικό",
+        password_mismatch: "Οι κωδικοί δεν ταιριάζουν",
       },
       verify_otp: {
         email_input_label: "Email",

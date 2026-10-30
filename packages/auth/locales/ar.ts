@@ -44,7 +44,12 @@ export default {
         password_input_placeholder: "كلمة المرور الجديدة الخاصة بك",
         button_label: "تحديث كلمة المرور",
         loading_button_label: "جارٍ تحديث كلمة المرور ...",
-        confirmation_text: "تم تحديث كلمة المرور الخاصة بك"
+        confirmation_text: "تم تحديث كلمة المرور الخاصة بك",
+        current_password_label: "كلمة المرور الحالية",
+        current_password_input_placeholder: "كلمة المرور الحالية",
+        confirm_password_label: "تأكيد كلمة المرور الجديدة",
+        confirm_password_input_placeholder: "أعد إدخال كلمة المرور الجديدة",
+        password_mismatch: "كلمتا المرور غير متطابقتين"
       },
       verify_otp: {
         email_input_label: "Email",

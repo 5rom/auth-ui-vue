@@ -44,7 +44,12 @@ export default {
         password_input_placeholder: "Kata sandi baru Anda",
         button_label: "Perbarui kata sandi",
         loading_button_label: "Sedang memperbarui kata sandi ...",
-        confirmation_text: "Kata sandi Anda telah diperbarui"
+        confirmation_text: "Kata sandi Anda telah diperbarui",
+        current_password_label: "Kata sandi saat ini",
+        current_password_input_placeholder: "Kata sandi Anda saat ini",
+        confirm_password_label: "Konfirmasi kata sandi baru",
+        confirm_password_input_placeholder: "Masukkan lagi kata sandi baru Anda",
+        password_mismatch: "Kata sandi tidak cocok"
       },
       verify_otp: {
         email_input_label: "Email",

@@ -45,6 +45,11 @@ export default {
         button_label: "Aktualizovat heslo",
         loading_button_label: "Aktualizace hesla...",
         confirmation_text: "Vaše heslo bylo aktualizováno",
+        current_password_label: "Současné heslo",
+        current_password_input_placeholder: "Vaše současné heslo",
+        confirm_password_label: "Potvrďte nové heslo",
+        confirm_password_input_placeholder: "Zadejte znovu nové heslo",
+        password_mismatch: "Hesla se neshodují",
       },
       verify_otp: {
         email_input_label: "E-mail",

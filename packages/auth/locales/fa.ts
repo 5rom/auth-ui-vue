@@ -45,6 +45,11 @@ export default {
         button_label: "به‌روزرسانی رمز عبور",
         loading_button_label: "در حال به‌روزرسانی رمز عبور...",
         confirmation_text: "رمز عبور شما به‌روزرسانی شد",
+        current_password_label: "رمز عبور فعلی",
+        current_password_input_placeholder: "رمز عبور فعلی شما",
+        confirm_password_label: "تأیید رمز عبور جدید",
+        confirm_password_input_placeholder: "رمز عبور جدید را دوباره وارد کنید",
+        password_mismatch: "رمزهای عبور مطابقت ندارند",
       },
       verify_otp: {
         email_input_label: "ایمیل",

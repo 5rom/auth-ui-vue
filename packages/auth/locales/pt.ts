@@ -44,7 +44,12 @@ export default {
         password_input_placeholder: "Sua nova senha",
         button_label: "Atualizar senha",
         loading_button_label: "Atualizando senha ...",
-        confirmation_text: "Sua senha foi atualizada"
+        confirmation_text: "Sua senha foi atualizada",
+        current_password_label: "Senha atual",
+        current_password_input_placeholder: "Sua senha atual",
+        confirm_password_label: "Confirmar nova senha",
+        confirm_password_input_placeholder: "Digite novamente sua nova senha",
+        password_mismatch: "As senhas não coincidem"
       },
       verify_otp: {
         email_input_label: "Email",

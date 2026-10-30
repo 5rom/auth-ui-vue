@@ -45,6 +45,11 @@ export default {
         button_label: "ធ្វើបច្ចុប្បន្នភាពពាក្យសម្ងាត់",
         loading_button_label: "កំពុងធ្វើបច្ចុប្បន្នភាពពាក្យសម្ងាត់ ...",
         confirmation_text: "ពាក្យសម្ងាត់របស់អ្នកត្រូវបានធ្វើបច្ចុប្បន្នភាព",
+        current_password_label: "ពាក្យសម្ងាត់បច្ចុប្បន្ន",
+        current_password_input_placeholder: "ពាក្យសម្ងាត់បច្ចុប្បន្នរបស់អ្នក",
+        confirm_password_label: "បញ្ជាក់ពាក្យសម្ងាត់ថ្មី",
+        confirm_password_input_placeholder: "បញ្ចូលពាក្យសម្ងាត់ថ្មីម្តងទៀត",
+        password_mismatch: "ពាក្យសម្ងាត់មិនត្រូវគ្នា",
       },
       verify_otp: {
         email_input_label: "អ៊ីមែល",

@@ -45,6 +45,11 @@ export default {
         button_label: "Sasisha nenosiri",
         loading_button_label: "Inasasisha nenosiri ...",
         confirmation_text: "Nenosiri lako limesasishwa",
+        current_password_label: "Nenosiri la sasa",
+        current_password_input_placeholder: "Nenosiri lako la sasa",
+        confirm_password_label: "Thibitisha nenosiri jipya",
+        confirm_password_input_placeholder: "Weka tena nenosiri lako jipya",
+        password_mismatch: "Manenosiri hayalingani",
       },
       verify_otp: {
         email_input_label: "Barua pepe",

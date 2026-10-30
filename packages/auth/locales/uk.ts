@@ -45,6 +45,11 @@ export default {
         button_label: "Оновити пароль",
         loading_button_label: "Оновлення пароля ...",
         confirmation_text: "Ваш пароль оновлено",
+        current_password_label: "Поточний пароль",
+        current_password_input_placeholder: "Ваш поточний пароль",
+        confirm_password_label: "Підтвердіть новий пароль",
+        confirm_password_input_placeholder: "Введіть новий пароль ще раз",
+        password_mismatch: "Паролі не збігаються",
       },
       verify_otp: {
         email_input_label: "Email",

@@ -45,6 +45,11 @@ export default {
         button_label: "Päivitä salasana",
         loading_button_label: "Päivitetään salasanaa ...",
         confirmation_text: "Salasanasi on päivitetty",
+        current_password_label: "Nykyinen salasana",
+        current_password_input_placeholder: "Nykyinen salasanasi",
+        confirm_password_label: "Vahvista uusi salasana",
+        confirm_password_input_placeholder: "Kirjoita uusi salasana uudelleen",
+        password_mismatch: "Salasanat eivät täsmää",
       },
       verify_otp: {
         email_input_label: "Sähköposti",

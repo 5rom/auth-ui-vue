@@ -45,6 +45,11 @@ export default {
         button_label: "கடவுச்சொல்லைப் புதுப்பி",
         loading_button_label: "கடவுச்சொல்லைப் புதுப்பிக்கிறது ...",
         confirmation_text: "உங்கள் கடவுச்சொல் புதுப்பிக்கப்பட்டது",
+        current_password_label: "தற்போதைய கடவுச்சொல்",
+        current_password_input_placeholder: "உங்கள் தற்போதைய கடவுச்சொல்",
+        confirm_password_label: "புதிய கடவுச்சொல்லை உறுதிப்படுத்தவும்",
+        confirm_password_input_placeholder: "புதிய கடவுச்சொல்லை மீண்டும் உள்ளிடவும்",
+        password_mismatch: "கடவுச்சொற்கள் பொருந்தவில்லை",
       },
       verify_otp: {
         email_input_label: "மின்னஞ்சல்",

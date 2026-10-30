@@ -44,7 +44,12 @@ export default {
         password_input_placeholder: "새 비밀번호를 입력하세요",
         button_label: "비밀번호 업데이트",
         loading_button_label: "비밀번호 업데이트 중 ...",
-        confirmation_text: "비밀번호가 업데이트되었습니다"
+        confirmation_text: "비밀번호가 업데이트되었습니다",
+        current_password_label: "현재 비밀번호",
+        current_password_input_placeholder: "현재 비밀번호",
+        confirm_password_label: "새 비밀번호 확인",
+        confirm_password_input_placeholder: "새 비밀번호를 다시 입력하세요",
+        password_mismatch: "비밀번호가 일치하지 않습니다"
       },
       verify_otp: {
         email_input_label: "이메일",

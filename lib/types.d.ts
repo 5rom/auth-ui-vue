@@ -27,6 +27,13 @@ export interface AuthI18nVariables extends I18nVariables {
     password_hide?: string;
     /** Localized messages for Supabase auth error codes, keyed by error code */
     errors?: Record<string, string>;
+    update_password?: I18nVariables['update_password'] & {
+        current_password_label?: string;
+        current_password_input_placeholder?: string;
+        confirm_password_label?: string;
+        confirm_password_input_placeholder?: string;
+        password_mismatch?: string;
+    };
 }
 interface BaseAuth {
     supabaseClient: SupabaseClient;

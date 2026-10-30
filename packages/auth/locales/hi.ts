@@ -44,7 +44,12 @@ export default {
         password_input_placeholder: "आपका नया पासवर्ड",
         button_label: "पासवर्ड अपडेट करें",
         loading_button_label: "पासवर्ड अपडेट हो रहा है ...",
-        confirmation_text: "आपका पासवर्ड अपडेट हो गया है"
+        confirmation_text: "आपका पासवर्ड अपडेट हो गया है",
+        current_password_label: "वर्तमान पासवर्ड",
+        current_password_input_placeholder: "आपका वर्तमान पासवर्ड",
+        confirm_password_label: "नए पासवर्ड की पुष्टि करें",
+        confirm_password_input_placeholder: "अपना नया पासवर्ड फिर से दर्ज करें",
+        password_mismatch: "पासवर्ड मेल नहीं खाते"
       },
       verify_otp: {
         email_input_label: "Email",

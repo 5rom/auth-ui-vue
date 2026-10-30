@@ -45,6 +45,11 @@ export default {
         button_label: "Aktualizuj hasło",
         loading_button_label: "Aktualizowanie hasła...",
         confirmation_text: "Twoje hasło zostało zaktualizowane",
+        current_password_label: "Obecne hasło",
+        current_password_input_placeholder: "Twoje obecne hasło",
+        confirm_password_label: "Potwierdź nowe hasło",
+        confirm_password_input_placeholder: "Wpisz ponownie nowe hasło",
+        password_mismatch: "Hasła nie są zgodne",
       },
       verify_otp: {
         email_input_label: "E-mail",

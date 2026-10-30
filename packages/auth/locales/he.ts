@@ -45,6 +45,11 @@ export default {
         button_label: "עדכן סיסמה",
         loading_button_label: "מעדכן סיסמה...",
         confirmation_text: "הסיסמה שלך עודכנה",
+        current_password_label: "סיסמה נוכחית",
+        current_password_input_placeholder: "הסיסמה הנוכחית שלך",
+        confirm_password_label: "אימות סיסמה חדשה",
+        confirm_password_input_placeholder: "הזן שוב את הסיסמה החדשה",
+        password_mismatch: "הסיסמאות אינן תואמות",
       },
       verify_otp: {
         email_input_label: "אימייל",

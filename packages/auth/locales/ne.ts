@@ -45,6 +45,11 @@ export default {
         button_label: "पासवर्ड अद्यावधिक गर्नुहोस्",
         loading_button_label: "पासवर्ड अद्यावधिक हुँदैछ ...",
         confirmation_text: "तपाईंको पासवर्ड अद्यावधिक गरिएको छ",
+        current_password_label: "हालको पासवर्ड",
+        current_password_input_placeholder: "तपाईंको हालको पासवर्ड",
+        confirm_password_label: "नयाँ पासवर्ड पुष्टि गर्नुहोस्",
+        confirm_password_input_placeholder: "आफ्नो नयाँ पासवर्ड फेरि लेख्नुहोस्",
+        password_mismatch: "पासवर्डहरू मेल खाँदैनन्",
       },
       verify_otp: {
         email_input_label: "इमेल",

@@ -45,6 +45,11 @@ export default {
         button_label: "စကားဝှက် အပ်ဒိတ်လုပ်ရန်",
         loading_button_label: "စကားဝှက် အပ်ဒိတ်လုပ်နေသည် ...",
         confirmation_text: "သင့်စကားဝှက်ကို အပ်ဒိတ်လုပ်ပြီးပါပြီ",
+        current_password_label: "လက်ရှိစကားဝှက်",
+        current_password_input_placeholder: "သင့်လက်ရှိစကားဝှက်",
+        confirm_password_label: "စကားဝှက်အသစ်ကို အတည်ပြုပါ",
+        confirm_password_input_placeholder: "စကားဝှက်အသစ်ကို ထပ်မံထည့်ပါ",
+        password_mismatch: "စကားဝှက်များ မကိုက်ညီပါ",
       },
       verify_otp: {
         email_input_label: "အီးမေးလ်",

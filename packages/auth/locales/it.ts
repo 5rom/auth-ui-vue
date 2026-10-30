@@ -44,7 +44,12 @@ export default {
         password_input_placeholder: "La tua nuova password",
         button_label: "Aggiorna password",
         loading_button_label: "Aggiornamento password ...",
-        confirmation_text: "La tua password è stata aggiornata"
+        confirmation_text: "La tua password è stata aggiornata",
+        current_password_label: "Password attuale",
+        current_password_input_placeholder: "La tua password attuale",
+        confirm_password_label: "Conferma nuova password",
+        confirm_password_input_placeholder: "Reinserisci la nuova password",
+        password_mismatch: "Le password non corrispondono"
       },
       verify_otp: {
         email_input_label: "Email",

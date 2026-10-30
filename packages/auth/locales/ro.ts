@@ -45,6 +45,11 @@ export default {
         button_label: "Actualizează parola",
         loading_button_label: "Se actualizează parola ...",
         confirmation_text: "Parola ta a fost actualizată",
+        current_password_label: "Parola curentă",
+        current_password_input_placeholder: "Parola ta curentă",
+        confirm_password_label: "Confirmă parola nouă",
+        confirm_password_input_placeholder: "Introdu din nou parola nouă",
+        password_mismatch: "Parolele nu se potrivesc",
       },
       verify_otp: {
         email_input_label: "E-mail",

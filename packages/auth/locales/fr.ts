@@ -44,7 +44,12 @@ export default {
         password_input_placeholder: "Votre nouveau mot de passe",
         button_label: "Mettre à jour le mot de passe",
         loading_button_label: "Mise à jour du mot de passe ...",
-        confirmation_text: "Votre mot de passe a été mis à jour"
+        confirmation_text: "Votre mot de passe a été mis à jour",
+        current_password_label: "Mot de passe actuel",
+        current_password_input_placeholder: "Votre mot de passe actuel",
+        confirm_password_label: "Confirmer le nouveau mot de passe",
+        confirm_password_input_placeholder: "Saisissez à nouveau votre nouveau mot de passe",
+        password_mismatch: "Les mots de passe ne correspondent pas"
       },
       verify_otp: {
         email_input_label: "E-mail",

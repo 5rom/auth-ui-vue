@@ -26,6 +26,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "The code has expired or is invalid",
     signup_disabled: "Sign-ups are currently disabled",
     user_not_found: "User not found",
+    current_password_required: "Please enter your current password",
+    current_password_mismatch: "Current password is incorrect",
   },
   ar: {
     invalid_credentials: "بيانات تسجيل الدخول غير صحيحة",
@@ -40,6 +42,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "انتهت صلاحية الرمز أو أنه غير صالح",
     signup_disabled: "التسجيل معطّل حاليًا",
     user_not_found: "المستخدم غير موجود",
+    current_password_required: "يرجى إدخال كلمة المرور الحالية",
+    current_password_mismatch: "كلمة المرور الحالية غير صحيحة",
   },
   bn: {
     invalid_credentials: "লগইন তথ্য সঠিক নয়",
@@ -54,6 +58,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "কোডটির মেয়াদ শেষ হয়েছে বা এটি অবৈধ",
     signup_disabled: "সাইন-আপ এখন বন্ধ আছে",
     user_not_found: "ব্যবহারকারী পাওয়া যায়নি",
+    current_password_required: "অনুগ্রহ করে আপনার বর্তমান পাসওয়ার্ড লিখুন",
+    current_password_mismatch: "বর্তমান পাসওয়ার্ডটি সঠিক নয়",
   },
   cs: {
     invalid_credentials: "Neplatné přihlašovací údaje",
@@ -68,6 +74,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Kód vypršel nebo je neplatný",
     signup_disabled: "Registrace jsou momentálně zakázány",
     user_not_found: "Uživatel nenalezen",
+    current_password_required: "Zadejte prosím své současné heslo",
+    current_password_mismatch: "Současné heslo není správné",
   },
   de: {
     invalid_credentials: "Ungültige Anmeldedaten",
@@ -82,6 +90,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Der Code ist abgelaufen oder ungültig",
     signup_disabled: "Registrierungen sind derzeit deaktiviert",
     user_not_found: "Benutzer nicht gefunden",
+    current_password_required: "Bitte geben Sie Ihr aktuelles Passwort ein",
+    current_password_mismatch: "Das aktuelle Passwort ist falsch",
   },
   el: {
     invalid_credentials: "Μη έγκυρα στοιχεία σύνδεσης",
@@ -96,6 +106,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Ο κωδικός έχει λήξει ή είναι μη έγκυρος",
     signup_disabled: "Οι εγγραφές είναι προς το παρόν απενεργοποιημένες",
     user_not_found: "Ο χρήστης δεν βρέθηκε",
+    current_password_required: "Εισαγάγετε τον τρέχοντα κωδικό σας",
+    current_password_mismatch: "Ο τρέχων κωδικός είναι λανθασμένος",
   },
   es: {
     invalid_credentials: "Credenciales de inicio de sesión no válidas",
@@ -110,6 +122,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "El código ha caducado o no es válido",
     signup_disabled: "Los registros están deshabilitados actualmente",
     user_not_found: "Usuario no encontrado",
+    current_password_required: "Introduce tu contraseña actual",
+    current_password_mismatch: "La contraseña actual es incorrecta",
   },
   fa: {
     invalid_credentials: "اطلاعات ورود نامعتبر است",
@@ -124,6 +138,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "کد منقضی شده یا نامعتبر است",
     signup_disabled: "ثبت‌نام در حال حاضر غیرفعال است",
     user_not_found: "کاربر یافت نشد",
+    current_password_required: "لطفاً رمز عبور فعلی خود را وارد کنید",
+    current_password_mismatch: "رمز عبور فعلی نادرست است",
   },
   fi: {
     invalid_credentials: "Virheelliset kirjautumistiedot",
@@ -138,6 +154,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Koodi on vanhentunut tai virheellinen",
     signup_disabled: "Rekisteröityminen on tällä hetkellä poistettu käytöstä",
     user_not_found: "Käyttäjää ei löytynyt",
+    current_password_required: "Anna nykyinen salasanasi",
+    current_password_mismatch: "Nykyinen salasana on väärä",
   },
   fil: {
     invalid_credentials: "Hindi wastong mga kredensyal sa pag-login",
@@ -152,6 +170,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Nag-expire na o hindi wasto ang code",
     signup_disabled: "Nakadisable pansamantala ang pag-sign up",
     user_not_found: "Hindi natagpuan ang user",
+    current_password_required: "Pakilagay ang iyong kasalukuyang password",
+    current_password_mismatch: "Mali ang kasalukuyang password",
   },
   fr: {
     invalid_credentials: "Identifiants de connexion invalides",
@@ -166,6 +186,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Le code a expiré ou est invalide",
     signup_disabled: "Les inscriptions sont actuellement désactivées",
     user_not_found: "Utilisateur introuvable",
+    current_password_required: "Veuillez saisir votre mot de passe actuel",
+    current_password_mismatch: "Le mot de passe actuel est incorrect",
   },
   he: {
     invalid_credentials: "פרטי ההתחברות שגויים",
@@ -180,6 +202,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "הקוד פג תוקף או שאינו חוקי",
     signup_disabled: "ההרשמה מושבתת כרגע",
     user_not_found: "המשתמש לא נמצא",
+    current_password_required: "נא להזין את הסיסמה הנוכחית",
+    current_password_mismatch: "הסיסמה הנוכחית שגויה",
   },
   hi: {
     invalid_credentials: "अमान्य लॉगिन विवरण",
@@ -194,6 +218,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "कोड समाप्त हो गया है या अमान्य है",
     signup_disabled: "साइन-अप फ़िलहाल अक्षम है",
     user_not_found: "उपयोगकर्ता नहीं मिला",
+    current_password_required: "कृपया अपना वर्तमान पासवर्ड दर्ज करें",
+    current_password_mismatch: "वर्तमान पासवर्ड गलत है",
   },
   hu: {
     invalid_credentials: "Érvénytelen bejelentkezési adatok",
@@ -208,6 +234,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "A kód lejárt vagy érvénytelen",
     signup_disabled: "A regisztráció jelenleg le van tiltva",
     user_not_found: "A felhasználó nem található",
+    current_password_required: "Add meg a jelenlegi jelszavad",
+    current_password_mismatch: "A jelenlegi jelszó hibás",
   },
   id: {
     invalid_credentials: "Kredensial login tidak valid",
@@ -222,6 +250,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Kode telah kedaluwarsa atau tidak valid",
     signup_disabled: "Pendaftaran saat ini dinonaktifkan",
     user_not_found: "Pengguna tidak ditemukan",
+    current_password_required: "Masukkan kata sandi Anda saat ini",
+    current_password_mismatch: "Kata sandi saat ini salah",
   },
   it: {
     invalid_credentials: "Credenziali di accesso non valide",
@@ -236,6 +266,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Il codice è scaduto o non è valido",
     signup_disabled: "Le registrazioni sono attualmente disabilitate",
     user_not_found: "Utente non trovato",
+    current_password_required: "Inserisci la password attuale",
+    current_password_mismatch: "La password attuale non è corretta",
   },
   ja: {
     invalid_credentials: "ログイン情報が正しくありません",
@@ -250,6 +282,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "コードの有効期限が切れているか無効です",
     signup_disabled: "現在、新規登録は無効になっています",
     user_not_found: "ユーザーが見つかりません",
+    current_password_required: "現在のパスワードを入力してください",
+    current_password_mismatch: "現在のパスワードが正しくありません",
   },
   km: {
     invalid_credentials: "ព័ត៌មានចូលមិនត្រឹមត្រូវ",
@@ -264,6 +298,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "កូដបានផុតកំណត់ ឬមិនត្រឹមត្រូវ",
     signup_disabled: "ការចុះឈ្មោះត្រូវបានបិទនៅពេលនេះ",
     user_not_found: "រកមិនឃើញអ្នកប្រើប្រាស់",
+    current_password_required: "សូមបញ្ចូលពាក្យសម្ងាត់បច្ចុប្បន្នរបស់អ្នក",
+    current_password_mismatch: "ពាក្យសម្ងាត់បច្ចុប្បន្នមិនត្រឹមត្រូវ",
   },
   ko: {
     invalid_credentials: "로그인 정보가 올바르지 않습니다",
@@ -278,6 +314,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "코드가 만료되었거나 유효하지 않습니다",
     signup_disabled: "현재 회원가입이 비활성화되어 있습니다",
     user_not_found: "사용자를 찾을 수 없습니다",
+    current_password_required: "현재 비밀번호를 입력하세요",
+    current_password_mismatch: "현재 비밀번호가 올바르지 않습니다",
   },
   ms: {
     invalid_credentials: "Butiran log masuk tidak sah",
@@ -292,6 +330,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Kod telah tamat tempoh atau tidak sah",
     signup_disabled: "Pendaftaran kini dilumpuhkan",
     user_not_found: "Pengguna tidak dijumpai",
+    current_password_required: "Sila masukkan kata laluan semasa anda",
+    current_password_mismatch: "Kata laluan semasa tidak betul",
   },
   my: {
     invalid_credentials: "အကောင့်ဝင်ရောက်မှု အချက်အလက်များ မမှန်ကန်ပါ",
@@ -306,6 +346,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "ကုဒ် သက်တမ်းကုန်သွားပြီ သို့မဟုတ် မမှန်ကန်ပါ",
     signup_disabled: "အကောင့်ဖွင့်ခြင်းကို လက်ရှိတွင် ပိတ်ထားသည်",
     user_not_found: "အသုံးပြုသူ ရှာမတွေ့ပါ",
+    current_password_required: "သင့်လက်ရှိစကားဝှက်ကို ထည့်ပါ",
+    current_password_mismatch: "လက်ရှိစကားဝှက် မမှန်ကန်ပါ",
   },
   ne: {
     invalid_credentials: "लगइन विवरण अमान्य छ",
@@ -320,6 +362,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "कोडको म्याद सकिएको छ वा अमान्य छ",
     signup_disabled: "साइन-अप हाल असक्षम पारिएको छ",
     user_not_found: "प्रयोगकर्ता फेला परेन",
+    current_password_required: "कृपया आफ्नो हालको पासवर्ड लेख्नुहोस्",
+    current_password_mismatch: "हालको पासवर्ड गलत छ",
   },
   nl: {
     invalid_credentials: "Ongeldige inloggegevens",
@@ -334,6 +378,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "De code is verlopen of ongeldig",
     signup_disabled: "Registraties zijn momenteel uitgeschakeld",
     user_not_found: "Gebruiker niet gevonden",
+    current_password_required: "Voer je huidige wachtwoord in",
+    current_password_mismatch: "Huidig wachtwoord is onjuist",
   },
   pl: {
     invalid_credentials: "Nieprawidłowe dane logowania",
@@ -348,6 +394,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Kod wygasł lub jest nieprawidłowy",
     signup_disabled: "Rejestracja jest obecnie wyłączona",
     user_not_found: "Nie znaleziono użytkownika",
+    current_password_required: "Wpisz swoje obecne hasło",
+    current_password_mismatch: "Obecne hasło jest nieprawidłowe",
   },
   pt: {
     invalid_credentials: "Credenciais de login inválidas",
@@ -362,6 +410,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "O código expirou ou é inválido",
     signup_disabled: "Os cadastros estão desativados no momento",
     user_not_found: "Usuário não encontrado",
+    current_password_required: "Digite sua senha atual",
+    current_password_mismatch: "A senha atual está incorreta",
   },
   ro: {
     invalid_credentials: "Date de autentificare nevalide",
@@ -376,6 +426,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Codul a expirat sau este nevalid",
     signup_disabled: "Înregistrările sunt momentan dezactivate",
     user_not_found: "Utilizatorul nu a fost găsit",
+    current_password_required: "Introdu parola curentă",
+    current_password_mismatch: "Parola curentă este incorectă",
   },
   ru: {
     invalid_credentials: "Неверные учётные данные",
@@ -390,6 +442,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Срок действия кода истёк или он недействителен",
     signup_disabled: "Регистрация в настоящее время отключена",
     user_not_found: "Пользователь не найден",
+    current_password_required: "Введите текущий пароль",
+    current_password_mismatch: "Текущий пароль неверен",
   },
   sv: {
     invalid_credentials: "Ogiltiga inloggningsuppgifter",
@@ -404,6 +458,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Koden har upphört att gälla eller är ogiltig",
     signup_disabled: "Registreringar är för närvarande inaktiverade",
     user_not_found: "Användaren hittades inte",
+    current_password_required: "Ange ditt nuvarande lösenord",
+    current_password_mismatch: "Nuvarande lösenord är felaktigt",
   },
   sw: {
     invalid_credentials: "Taarifa za kuingia si sahihi",
@@ -418,6 +474,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Msimbo umeisha muda au si sahihi",
     signup_disabled: "Usajili umezimwa kwa sasa",
     user_not_found: "Mtumiaji hakupatikana",
+    current_password_required: "Tafadhali weka nenosiri lako la sasa",
+    current_password_mismatch: "Nenosiri la sasa si sahihi",
   },
   ta: {
     invalid_credentials: "உள்நுழைவு விவரங்கள் தவறானவை",
@@ -432,6 +490,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "குறியீட்டின் காலம் முடிந்துவிட்டது அல்லது அது தவறானது",
     signup_disabled: "பதிவு தற்போது முடக்கப்பட்டுள்ளது",
     user_not_found: "பயனர் கண்டறியப்படவில்லை",
+    current_password_required: "உங்கள் தற்போதைய கடவுச்சொல்லை உள்ளிடவும்",
+    current_password_mismatch: "தற்போதைய கடவுச்சொல் தவறானது",
   },
   th: {
     invalid_credentials: "ข้อมูลเข้าสู่ระบบไม่ถูกต้อง",
@@ -446,6 +506,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "รหัสหมดอายุหรือไม่ถูกต้อง",
     signup_disabled: "ขณะนี้ปิดการลงทะเบียน",
     user_not_found: "ไม่พบผู้ใช้",
+    current_password_required: "กรุณาป้อนรหัสผ่านปัจจุบันของคุณ",
+    current_password_mismatch: "รหัสผ่านปัจจุบันไม่ถูกต้อง",
   },
   tr: {
     invalid_credentials: "Geçersiz giriş bilgileri",
@@ -460,6 +522,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Kodun süresi doldu veya geçersiz",
     signup_disabled: "Kayıtlar şu anda devre dışı",
     user_not_found: "Kullanıcı bulunamadı",
+    current_password_required: "Lütfen mevcut şifrenizi girin",
+    current_password_mismatch: "Mevcut şifre yanlış",
   },
   uk: {
     invalid_credentials: "Невірні облікові дані",
@@ -474,6 +538,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Термін дії коду закінчився або він недійсний",
     signup_disabled: "Реєстрація наразі вимкнена",
     user_not_found: "Користувача не знайдено",
+    current_password_required: "Введіть поточний пароль",
+    current_password_mismatch: "Поточний пароль неправильний",
   },
   ur: {
     invalid_credentials: "لاگ ان کی تفصیلات غلط ہیں",
@@ -488,6 +554,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "کوڈ کی میعاد ختم ہو گئی ہے یا یہ غلط ہے",
     signup_disabled: "سائن اپ فی الحال غیر فعال ہے",
     user_not_found: "صارف نہیں ملا",
+    current_password_required: "براہ کرم اپنا موجودہ پاس ورڈ درج کریں",
+    current_password_mismatch: "موجودہ پاس ورڈ غلط ہے",
   },
   vi: {
     invalid_credentials: "Thông tin đăng nhập không chính xác",
@@ -502,6 +570,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "Mã đã hết hạn hoặc không hợp lệ",
     signup_disabled: "Hiện không cho phép đăng ký",
     user_not_found: "Không tìm thấy người dùng",
+    current_password_required: "Vui lòng nhập mật khẩu hiện tại",
+    current_password_mismatch: "Mật khẩu hiện tại không đúng",
   },
   zh: {
     invalid_credentials: "登录凭据无效",
@@ -516,6 +586,8 @@ export const authErrorMessages: Record<string, AuthErrorMessages> = {
     otp_expired: "验证码已过期或无效",
     signup_disabled: "当前已禁用注册",
     user_not_found: "未找到用户",
+    current_password_required: "请输入当前密码",
+    current_password_mismatch: "当前密码不正确",
   },
 }
 

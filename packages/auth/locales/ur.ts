@@ -45,6 +45,11 @@ export default {
         button_label: "پاس ورڈ اپ ڈیٹ کریں",
         loading_button_label: "پاس ورڈ اپ ڈیٹ ہو رہا ہے ...",
         confirmation_text: "آپ کا پاس ورڈ اپ ڈیٹ ہو گیا ہے",
+        current_password_label: "موجودہ پاس ورڈ",
+        current_password_input_placeholder: "آپ کا موجودہ پاس ورڈ",
+        confirm_password_label: "نئے پاس ورڈ کی تصدیق کریں",
+        confirm_password_input_placeholder: "اپنا نیا پاس ورڈ دوبارہ درج کریں",
+        password_mismatch: "پاس ورڈ مماثل نہیں ہیں",
       },
       verify_otp: {
         email_input_label: "ای میل",
